@@ -101,7 +101,7 @@ languageRouter.post(
         req.language.head,
       );
 
-      const correct = head.translation === guess;
+      const correct = head.translation === guess.toLowerCase();
 
       const total_score = correct
         ? req.language.total_score + 1

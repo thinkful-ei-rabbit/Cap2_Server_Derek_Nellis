@@ -45,7 +45,7 @@ const UserService = {
     return db.transaction(async (trx) => {
       const [languageId] = await trx
         .into('language')
-        .insert([{ name: 'French', user_id }], ['id']);
+        .insert([{ name: 'Spanish', user_id }], ['id']);
 
       // when inserting words,
       // we need to know the current sequence number
